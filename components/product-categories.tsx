@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { site } from '@/lib/site'
 
 const categories = [
   {
@@ -60,6 +61,15 @@ const categories = [
 ]
 
 export function ProductCategories() {
+  const openWhatsApp = (productName: string) => {
+    const message = `Hello ${site.name}, I want the best price for ${productName}.`
+    window.open(
+      `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`,
+      '_blank',
+      'noopener,noreferrer',
+    )
+  }
+
   return (
     <section id="products" className="section" aria-labelledby="products-title">
       <header className="section-header">
@@ -99,7 +109,7 @@ export function ProductCategories() {
               <p className="md-typescale-label-medium category-brands">
                 {category.brands}
               </p>
-              <md-text-button href="#contact" class="category-cta">
+              <md-text-button onClick={() => openWhatsApp(category.title)} class="category-cta">
                 Get best price
                 <md-icon slot="icon">arrow_forward</md-icon>
               </md-text-button>
