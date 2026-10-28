@@ -5,9 +5,9 @@ html {
 
 body {
   margin: 0;
-  background: #eff0f3;
-  color: #1d1b20;
-  font-family: var(--md-ref-typeface-plain, 'Roboto', Arial, sans-serif);
+  background: #f6f3ee;
+  color: #1a1a1a;
+  font-family: var(--md-ref-typeface-plain, 'Poppins', Arial, sans-serif);
 }
 
 a {
@@ -47,13 +47,13 @@ md-divider {
   margin: 0;
   color: #1d1b20;
   font-weight: 800;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
 }
 
 .section-subtitle {
   margin: 0;
-  color: #4f5367;
-  line-height: 1.6;
+  color: #5a5a5a;
+  line-height: 1.7;
 }
 
 .icon-badge {
@@ -63,9 +63,10 @@ md-divider {
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: rgba(162, 143, 255, 0.18);
-  color: #5b4ae6;
+  background: linear-gradient(135deg, rgba(116, 88, 37, 0.12), rgba(91, 74, 230, 0.12));
+  color: #5b3d13;
   flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px rgba(118, 94, 46, 0.08);
 }
 
 .icon-badge md-icon {
@@ -74,12 +75,12 @@ md-divider {
 
 .card-title {
   margin: 0;
-  color: #1d1b20;
+  color: #171717;
 }
 
 .card-text {
   margin: 0;
-  color: #4f5367;
+  color: #525252;
   line-height: 1.7;
 }
 
@@ -88,9 +89,10 @@ md-divider {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(249, 248, 251, 0.9);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(112, 120, 138, 0.18);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(116, 94, 46, 0.12);
+  box-shadow: 0 8px 24px rgba(26, 26, 26, 0.03);
 }
 
 .site-header-inner {
@@ -137,19 +139,24 @@ md-divider {
   min-height: 42px;
   padding: 8px 14px;
   border-radius: 999px;
-  color: #1d1b20;
-  font-size: 1.02rem;
-  transition: background 0.2s ease, color 0.2s ease;
+  color: #2a2a2a;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
   white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
 .site-nav a:hover {
   background: rgba(91, 74, 230, 0.06);
+  color: #1d1d1d;
 }
 
 .nav-link-active {
-  background: rgba(91, 74, 230, 0.08);
-  color: #5b4ae6 !important;
+  background: linear-gradient(135deg, rgba(91, 74, 230, 0.10), rgba(146, 110, 68, 0.12));
+  color: #3a2d13 !important;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(106, 83, 29, 0.08);
 }
 
 .header-actions {
@@ -161,8 +168,8 @@ md-divider {
 }
 
 .header-call-button {
-  --md-filled-button-container-color: rgba(91, 74, 230, 0.1);
-  --md-filled-button-label-text-color: #5b4ae6;
+  --md-filled-button-container-color: rgba(91, 74, 230, 0.08);
+  --md-filled-button-label-text-color: #3b2d16;
   --md-filled-button-container-shape: 9999px;
   --md-filled-button-height: 38px;
   font-weight: 600;
@@ -233,10 +240,10 @@ md-divider {
   margin: 0;
   padding: 7px 16px 7px 12px;
   border-radius: 9999px;
-  background: rgba(162, 143, 255, 0.18);
-  color: #5b4ae6;
+  background: linear-gradient(135deg, rgba(116, 88, 37, 0.12), rgba(91, 74, 230, 0.12));
+  color: #4f3a1a;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .hero-eyebrow md-icon {
@@ -245,7 +252,7 @@ md-divider {
 
 .hero-title {
   margin: 0;
-  color: #1d1b20;
+  color: #181818;
   text-wrap: balance;
 }
 
@@ -259,10 +266,10 @@ md-divider {
 .hero-subtitle {
   margin: 0;
   max-width: 58ch;
-  color: #525d75;
+  color: #575757;
   text-wrap: pretty;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.08rem;
+  line-height: 1.7;
 }
 
 .hero-actions {
@@ -276,10 +283,10 @@ md-divider {
 .hero-actions md-outlined-button,
 .category-cta,
 .form-submit {
-  --md-filled-button-container-color: #5b4ae6;
+  --md-filled-button-container-color: #3c2d17;
   --md-filled-button-label-text-color: #fff;
-  --md-outlined-button-outline-color: #5b4ae6;
-  --md-outlined-button-label-text-color: #5b4ae6;
+  --md-outlined-button-outline-color: #3c2d17;
+  --md-outlined-button-label-text-color: #3c2d17;
 }
 
 .hero-media {
@@ -288,7 +295,7 @@ md-divider {
   border-radius: 34px;
   overflow: hidden;
   background: #efeae7;
-  box-shadow: 0 18px 40px rgba(71, 71, 71, 0.08);
+  box-shadow: 0 18px 40px rgba(71, 71, 71, 0.09);
   border: 1px solid rgba(95, 96, 107, 0.08);
 }
 
@@ -309,20 +316,20 @@ md-divider {
   gap: 6px;
   padding: 18px 20px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.64);
   border: 1px solid rgba(108, 117, 146, 0.12);
   box-shadow: 0 8px 20px rgba(17, 17, 17, 0.02);
 }
 
 .stat-value {
   margin: 0;
-  color: #1d1d2c;
+  color: #141414;
   font-weight: 700;
   font-size: clamp(1.8rem, 2vw, 2.8rem);
 }
 
 .stat-label {
-  color: #5c6276;
+  color: #605f5d;
   font-size: 1.05rem;
 }
 
@@ -361,7 +368,7 @@ md-divider {
   overflow: hidden;
   border: 1px solid rgba(112, 120, 138, 0.18);
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 10px 20px rgba(17, 17, 17, 0.03);
 }
 
@@ -392,7 +399,7 @@ md-divider {
 
 .category-brands {
   margin: 0;
-  color: #5b4ae6;
+  color: #5b3d13;
 }
 
 .category-cta {
@@ -418,7 +425,7 @@ md-divider {
   padding: 22px 18px;
   border-radius: 22px;
   border: 1px solid rgba(112, 120, 138, 0.18);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .brands {
@@ -429,7 +436,7 @@ md-divider {
   margin: 0 0 16px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #5c6276;
+  color: #6c5a3d;
 }
 
 .brand-list {
@@ -447,7 +454,7 @@ md-divider {
   justify-content: center;
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.7);
   color: #1d1b20;
   border: 1px solid rgba(112, 120, 138, 0.18);
 }
@@ -493,13 +500,13 @@ md-divider {
   padding: 22px 22px 18px;
   border-radius: 28px;
   border: 1px solid rgba(112, 120, 138, 0.18);
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 10px 20px rgba(17, 17, 17, 0.02);
 }
 
 .plan-card-featured {
-  background: rgba(203, 184, 234, 0.6);
-  border-color: rgba(120, 95, 179, 0.45);
+  background: linear-gradient(135deg, rgba(215, 191, 142, 0.36), rgba(203, 184, 234, 0.44));
+  border-color: rgba(120, 95, 179, 0.35);
   box-shadow: 0 15px 28px rgba(116, 90, 174, 0.08);
 }
 
@@ -525,7 +532,7 @@ md-divider {
   min-height: 28px;
   padding: 7px 12px;
   border-radius: 999px;
-  background: #6d4ec9;
+  background: linear-gradient(135deg, #3c2d17, #7a5a2c);
   color: #fff;
   font-size: 0.76rem;
   font-weight: 700;
@@ -535,8 +542,8 @@ md-divider {
 .plan-description {
   margin: 0;
   color: #4f5367;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.08rem;
+  line-height: 1.6;
 }
 
 .plan-price {
@@ -596,13 +603,13 @@ md-divider {
 }
 
 .plan-card-featured .plan-cta {
-  --md-filled-button-container-color: #5b4ae6;
+  --md-filled-button-container-color: #3c2d17;
   --md-filled-button-label-text-color: #fff;
 }
 
 .plan-card:not(.plan-card-featured) .plan-cta {
-  --md-outlined-button-outline-color: #5b4ae6;
-  --md-outlined-button-label-text-color: #5b4ae6;
+  --md-outlined-button-outline-color: #3c2d17;
+  --md-outlined-button-label-text-color: #3c2d17;
 }
 
 .corporate-banner {
@@ -614,7 +621,7 @@ md-divider {
   padding: 18px 20px;
   border-radius: 26px;
   border: 1px solid rgba(112, 120, 138, 0.18);
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .corporate-copy {
@@ -643,13 +650,13 @@ md-divider {
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: rgba(162, 143, 255, 0.18);
-  color: #5b4ae6;
+  background: linear-gradient(135deg, rgba(116, 88, 37, 0.12), rgba(91, 74, 230, 0.12));
+  color: #4f3a1a;
 }
 
 .corporate-banner md-filled-tonal-button {
   --md-filled-tonal-button-container-color: rgba(91, 74, 230, 0.08);
-  --md-filled-tonal-button-label-text-color: #5b4ae6;
+  --md-filled-tonal-button-label-text-color: #3b2d16;
   --md-filled-tonal-button-container-shape: 9999px;
   font-weight: 600;
 }
@@ -681,7 +688,7 @@ md-divider {
   padding: 24px;
   border-radius: 28px;
   border: 1px solid rgba(112, 120, 138, 0.18);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .contact-list {
@@ -732,7 +739,7 @@ md-divider {
 /* Footer */
 .site-footer {
   border-top: 1px solid rgba(112, 120, 138, 0.18);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .footer-inner {
