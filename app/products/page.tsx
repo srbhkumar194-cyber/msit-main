@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function ProductsPage() {
   return (
-    <>
+    <div className="home-shell">
       <SiteHeader />
       <main className="page">
         <ProductCategories />
       </main>
       <SiteFooter />
-    </>
+    </div>
   )
 }

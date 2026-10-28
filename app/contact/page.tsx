@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <>
+    <div className="home-shell">
       <SiteHeader />
       <main className="page">
         <EnquirySection />
       </main>
       <SiteFooter />
-    </>
+    </div>
   )
 }

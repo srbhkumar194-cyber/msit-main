@@ -9,7 +9,7 @@ import './home.css'
 
 export default function HomePage() {
   return (
-    <>
+    <div className="home-shell">
       <SiteHeader />
       <main className="page">
         <Hero />
@@ -19,6 +19,6 @@ export default function HomePage() {
         <EnquirySection />
       </main>
       <SiteFooter />
-    </>
+    </div>
   )
 }

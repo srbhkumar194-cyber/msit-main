@@ -7,10 +7,10 @@ export function AboutHero() {
       <div className="hero-copy">
         <p className="md-typescale-label-large hero-eyebrow">About {site.legalName}</p>
         <h1 id="about-title" className="md-typescale-display-medium hero-title">
-          Your trusted IT partner in West Delhi
+          Your trusted IT partner in Delhi
         </h1>
         <p className="md-typescale-body-large hero-text">
-          {site.name} is a one-stop IT shop near Dwarka Mor Metro, Najafgarh. We
+          {site.name} is a one-stop IT shop New Delhi. We
           sell computers, laptops, printers, cameras, mobiles and Apple
           products, provide genuine software, and keep homes and offices
           running with repairs and Annual Maintenance Contracts.

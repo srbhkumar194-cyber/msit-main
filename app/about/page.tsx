@@ -8,14 +8,14 @@ import '../home.css'
 import './about.css'
 
 export const metadata: Metadata = {
-  title: 'About Us — MSIT Services, Najafgarh, New Delhi',
+  title: 'About Us — MSIT Services, New Delhi',
   description:
-    'M S IT SERVICES, Najafgarh, New Delhi: sales of computers, laptops, printers, cameras, mobiles and Apple products, genuine software, repairs and AMC.',
+    'M S IT SERVICES, New Delhi: sales of computers, laptops, printers, cameras, mobiles and Apple products, genuine software, repairs and AMC.',
 }
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="home-shell">
       <SiteHeader />
       <main className="page">
         <AboutHero />
@@ -23,6 +23,6 @@ export default function AboutPage() {
         <BusinessDetails />
       </main>
       <SiteFooter />
-    </>
+    </div>
   )
 }
