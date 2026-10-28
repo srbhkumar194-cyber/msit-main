@@ -788,3 +788,127 @@ md-divider {
     max-width: 100%;
   }
 }
+
+/* Dark mode */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body,
+.dark {
+  background: #141218;
+  color: #e6e0e9;
+}
+
+.dark .site-header {
+  background: rgba(24, 22, 28, 0.82);
+  border-bottom-color: rgba(147, 143, 153, 0.25);
+}
+
+.dark .site-nav a,
+.dark .section-title,
+.dark .card-title,
+.dark .hero-title,
+.dark .contact-value,
+.dark .footer-heading,
+.dark .corporate-copy h3,
+.dark .plan-card .card-title,
+.dark .plan-feature,
+.dark .plan-price,
+.dark .brand-item,
+.dark .header-call-button {
+  color: var(--md-sys-color-on-surface);
+}
+
+.dark .section-subtitle,
+.dark .card-text,
+.dark .hero-subtitle,
+.dark .stat-label,
+.dark .contact-label,
+.dark .footer-text,
+.dark .footer-address,
+.dark .footer-bottom,
+.dark .footer-links a,
+.dark .corporate-copy p,
+.dark .plan-description,
+.dark .plan-period,
+.dark .footer-gst,
+.dark .brands-label {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.dark .site-nav a:hover,
+.dark .nav-link-active {
+  background: rgba(208, 188, 255, 0.12);
+  color: #d0bcff !important;
+}
+
+.dark .hero-eyebrow,
+.dark .icon-badge,
+.dark .icon-badge-large {
+  background: rgba(208, 188, 255, 0.16);
+  color: #d0bcff;
+}
+
+.dark .header-call-button {
+  --md-filled-button-container-color: rgba(208, 188, 255, 0.12);
+  --md-filled-button-label-text-color: #d0bcff;
+}
+
+.dark .hero-media,
+.dark .category-card,
+.dark .service-tile,
+.dark .plan-card,
+.dark .contact-info,
+.dark .enquiry-form,
+.dark .corporate-banner,
+.dark .brand-item,
+.dark .stat,
+.dark .site-footer {
+  background: rgba(32, 29, 37, 0.9);
+  border-color: rgba(147, 143, 153, 0.2);
+}
+
+.dark .hero-media {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.dark .brand-item {
+  color: #e6e0e9;
+}
+
+.dark .plan-card-featured {
+  background: rgba(116, 94, 180, 0.32);
+  border-color: rgba(208, 188, 255, 0.35);
+}
+
+.dark .plan-badge {
+  background: #d0bcff;
+  color: #381e72;
+}
+
+.dark .plan-feature md-icon,
+.dark .icon-badge md-icon,
+.dark .hero-eyebrow md-icon,
+.dark .footer-address a,
+.dark .contact-value:hover,
+.dark .footer-links a:hover {
+  color: #d0bcff;
+}
+
+.dark .footer-links a,
+.dark .footer-text,
+.dark .footer-address,
+.dark .footer-bottom,
+.dark .contact-value,
+.dark .footer-heading,
+.dark .brand-item {
+  opacity: 1;
+}
+
+.dark .site-header-inner,
+.dark .page,
+.dark .footer-inner,
+.dark .footer-bottom {
+  background: transparent;
+}
