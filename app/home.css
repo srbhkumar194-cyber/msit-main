@@ -489,10 +489,10 @@ main.page {
 .footer-inner {
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 40px 0 18px;
+  padding: 42px 0 18px;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr 0.7fr 0.8fr;
-  gap: clamp(20px, 3vw, 40px);
+  grid-template-columns: 1.4fr 0.75fr 0.75fr 0.9fr;
+  gap: clamp(22px, 3vw, 42px);
   align-items: start;
 }
 
@@ -573,8 +573,9 @@ main.page {
 .footer-bottom {
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 16px 0 24px;
+  padding: 16px 0 28px;
   font-size: 0.8rem;
+  letter-spacing: 0.01em;
 }
 
 md-filled-button,
