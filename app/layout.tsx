@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from 'next'
-import { Roboto } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import { MaterialWebLoader } from '@/components/material-web-loader'
 import './globals.css'
 
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
+const poppins = Poppins({
+  weight: ['300', '400', '500', '600', '700', '800'],
   subsets: ['latin'],
-  variable: '--font-roboto',
+  variable: '--font-poppins',
   display: 'swap',
 })
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={roboto.variable} suppressHydrationWarning>
+    <html lang="en" className={poppins.variable} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
