@@ -1,3 +1,7 @@
+'use client'
+
+import { site } from '@/lib/site'
+
 const plans = [
   {
     name: 'Basic',
@@ -40,6 +44,15 @@ const plans = [
 ]
 
 export function AmcPlans() {
+  const openWhatsApp = (planName: string) => {
+    const message = `Hello ${site.name}, I want to know more about the ${planName} AMC plan.`
+    window.open(
+      `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`,
+      '_blank',
+      'noopener,noreferrer',
+    )
+  }
+
   return (
     <section id="amc" className="section" aria-labelledby="amc-title">
       <header className="section-header">
@@ -83,11 +96,11 @@ export function AmcPlans() {
               ))}
             </ul>
             {plan.featured ? (
-              <md-filled-button href="#contact" class="plan-cta">
+              <md-filled-button onClick={() => openWhatsApp(plan.name)} class="plan-cta">
                 Choose {plan.name}
               </md-filled-button>
             ) : (
-              <md-outlined-button href="#contact" class="plan-cta">
+              <md-outlined-button onClick={() => openWhatsApp(plan.name)} class="plan-cta">
                 Choose {plan.name}
               </md-outlined-button>
             )}
@@ -106,7 +119,7 @@ export function AmcPlans() {
             for 10+ systems with a dedicated engineer.
           </p>
         </div>
-        <md-filled-tonal-button href="#contact">
+        <md-filled-tonal-button onClick={() => openWhatsApp('Corporate & bulk AMC')}>
           Request a quote
         </md-filled-tonal-button>
       </div>
