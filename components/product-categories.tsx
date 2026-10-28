@@ -42,7 +42,7 @@ const categories = [
     image: '/images/cameras.png',
     description:
       'CCTV, IP and Wi-Fi cameras with complete installation, plus DSLR cameras.',
-    brands: 'CP Plus • Hikvision • Honeywell',
+    brands: 'Dahua • Canon',
   },
   {
     title: 'Mobiles',
